@@ -1,3 +1,6 @@
 [submodule "infographics-default"]
 	path = infographics-default
 	url = https://github.com/Ao21/infographics-default.git
+[submodule "infographics-angular"]
+	path = infographics-angular
+	url = https://github.com/Ao21/infographics-angular.git
