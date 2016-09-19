@@ -1,12 +1,22 @@
 nginx:
     build: ./nginx
+    links: 
+        - app1:app1
     ports:
-     - "80:80"
-     - "443:443"
+        - "80:80"
+        - "443:443"
     volumes: 
-     - /etc/nginx/psw:/etc/nginx/psw
-     - /etc/nginx/ssl:/etc/nginx/ssl
+        - /etc/nginx/psw:/etc/nginx/psw
+        - /etc/nginx/ssl:/etc/nginx/ssl
     environment:
-     - DOMAIN_NAME=robrett.com
+        - DOMAIN_NAME=robrett.com
+app1:
+    build: ./infographics-server
+    links:
+        - mongo
+    ports:
+        - "4500"
+    volumes:
+        - /tmp:/tmp
 mongo:
     image: mongo:3.0.2
