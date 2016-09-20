@@ -1,0 +1,24 @@
+{
+  "name": "infographics",
+  "version": "1.0.0",
+  "description": "infographics",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp": "^3.9.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "gulp build && docker-compose build && docker-compose -f docker-compose.yml up -d",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ao21/infographics.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ao21/infographics/issues"
+  },
+  "homepage": "https://github.com/Ao21/infographics#readme"
+}

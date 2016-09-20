@@ -16,3 +16,8 @@ app1:
         - ANGULAR_SRC=./../infographics-angular/dist/index.html
 mongo:
     image: mongo:3.3
+
+mongo-seed:
+  build: ./mongo-seed
+  links:
+    - mongo
