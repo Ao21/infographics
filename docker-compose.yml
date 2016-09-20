@@ -4,12 +4,6 @@ nginx:
         - app1:app1
     ports:
         - "80:80"
-        - "443:443"
-    volumes: 
-        - /etc/nginx/psw:/etc/nginx/psw
-        - /etc/nginx/ssl:/etc/nginx/ssl
-    environment:
-        - DOMAIN_NAME=robrett.com
 app1:
     build: ./infographics-server
     links:
@@ -18,5 +12,7 @@ app1:
         - "4500"
     volumes:
         - /tmp:/tmp
+    environment:
+        - ANGULAR_SRC=./../infographics-angular/dist/index.html
 mongo:
-    image: mongo:3.0.2
+    image: mongo:3.3
