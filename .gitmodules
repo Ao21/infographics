@@ -7,3 +7,6 @@
 [submodule "infographics-server"]
 	path = infographics-server
 	url = https://github.com/Ao21/infographics-server.git
+[submodule "infographics-chart"]
+	path = infographics-chart
+	url = https://github.com/Ao21/infographics-chart.git
