@@ -10,3 +10,6 @@
 [submodule "infographics-chart"]
 	path = infographics-chart
 	url = https://github.com/Ao21/infographics-chart.git
+[submodule "infographics-summed"]
+	path = infographics-summed
+	url = https://github.com/Ao21/infographics-summed.git
