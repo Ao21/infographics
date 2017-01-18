@@ -26,4 +26,6 @@ gulp.task('copy-charts-to-server', function () {
 })
 
 
+gulp.task('build-charts', ['copy-default-to-server','copy-summed-to-server','copy-charts-to-server'], function () { });
+
 gulp.task('build', ['copy-angular-to-server','copy-default-to-server','copy-summed-to-server','copy-charts-to-server'], function () { });
